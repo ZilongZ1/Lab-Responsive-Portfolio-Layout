@@ -1,3 +1,4 @@
+/* Define reusable color variables for the website */
 :root {
     --main-green: #18453B;
     --light-green: #E8F1EE;
@@ -6,10 +7,12 @@
     --white: #FFFFFF;
 }
 
+/* Enable smooth scrolling when clicking navigation links */
 html {
     scroll-behavior: smooth;
 }
 
+/* Set the basic font, colors, spacing, and line height for the page */
 body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
@@ -18,6 +21,7 @@ body {
     line-height: 1.6;
 }
 
+/* Style the main header with a dark green background */
 header {
     background-color: var(--main-green);
     color: var(--white);
@@ -25,17 +29,20 @@ header {
     padding: 28px 16px;
 }
 
+/* Style the main title in the header */
 header h1 {
     margin: 0;
     font-size: 32px;
     letter-spacing: 1px;
 }
 
+/* Style the subtitle below the main title */
 header p {
     font-size: 16px;
     margin: 10px 0 20px;
 }
 
+/* Create a white background for the navigation area */
 nav {
     background-color: var(--white);
     padding: 12px;
@@ -44,6 +51,8 @@ nav {
     margin: 0 auto;
 }
 
+
+/* Use Flexbox to arrange navigation links in a row */
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -56,28 +65,33 @@ nav ul {
     margin: 0;
 }
 
+/* Add spacing around each navigation item */
 nav li {
     display: inline;
     margin: 0 12px;
 }
 
+/* Style navigation links */
 nav a {
     color: var(--main-green);
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Change the link color and underline it when hovered */
 nav a:hover {
     color: var(--accent-green);
     text-decoration: underline;
 }
 
+/* Center the main content and limit its width */
 main {
     max-width: 900px;
     margin: 24px auto;
     padding: 0 16px;
 }
 
+/* Style each main content section as a separate card */
 section {
     background-color: var(--white);
     margin-bottom: 24px;
@@ -86,6 +100,7 @@ section {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Style second-level headings */
 section h2 {
     color: var(--main-green);
     font-size: 26px;
@@ -94,20 +109,24 @@ section h2 {
     padding-bottom: 8px;
 }
 
+/* Set the color and top spacing for third-level headings */
 section h3 {
     color: var(--main-green);
     margin-top: 25px;
 }
 
+/* Set paragraph text size and bottom spacing */
 section p {
     font-size: 16px;
     margin-bottom: 18px;
 }
 
+/* Center the content in the Home section */
 #home {
     text-align: center;
 }
 
+/* Set the profile image size and appearance */
 #home img {
     display: block;
     width: 300px;
@@ -118,42 +137,49 @@ section p {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
 }
 
+/* Limit the width of the Home section paragraphs */
 #home p {
     max-width: 700px;
     margin: 15px auto;
 }
 
+/* Add a light green background behind the interests list */
 #about ul {
     background-color: var(--light-green);
     padding: 16px 16px 16px 16px 36px;
     border-radius: 12px;
 }
 
+/* Add space between list items */
 #about li {
     margin-bottom: 8px;
 }
 
+/* Style links in the About section */
 #about a {
     color: var(--main-green);
     font-weight: bold;
 }
 
+/* Change the About link color when hovered */
 #about a:hover {
     color: var(--accent-green);
 }
 
+/* Use CSS Grid to arrange project cards */
 #projects {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;
 }
 
+/* Make the Projects heading span all grid columns */
 #projects > h2 {
     grid-column: 1 / -1;
     margin-bottom: 0;
 }
 
-
+/* Style each project card */
 #projects article {
     min-width: 0;
     border-left: 5px solid var(--accent-green);
@@ -163,33 +189,40 @@ section p {
     border-radius: 0 12px 12px 0;
 }
 
+/* Remove the extra top margin from project titles */
 #projects article h3 {
     margin-top: 0;
 }
 
+/* Remove extra bottom spacing from project descriptions */
 #projects article p {
     margin-bottom: 0;
 }
 
+/* Center the Contact section content */
 #contact {
     text-align: center;
 }
 
+/* Style the contact information area */
 #contact address {
     font-style: normal;
     margin-top: 15px;
 }
 
+/* Style the email link */
 #contact a {
     color: var(--main-green);
     font-weight: bold;
     text-decoration: none;
 }
 
+/* Underline the email link when hovered */
 #contact a:hover {
     text-decoration: underline;
 }
 
+/* Style the footer with the main green color */
 footer {
     background-color: var(--main-green);
     color: var(--white);
@@ -197,100 +230,126 @@ footer {
     padding: 20px;
 }
 
+/* Remove the default paragraph margin in the footer */
 footer p {
     margin: 0;
 }
 
-/* ---------- Media queries (mobile-first: min-width only) ---------- */
+/* ---------- Responsive layout using a mobile-first approach ---------- */
+/* Start with the small-screen layout and add styles for wider screens */
 
 /* Breakpoint 1: wider phones and small tablets */
 @media (min-width: 600px) {
+       /* Add more space inside the header */
     header {
         padding: 36px 20px;
     }
 
+      /* Increase the main title size */
     header h1 {
         font-size: 38px;
     }
 
+    /* Increase the subtitle size and spacing */
     header p {
         font-size: 18px;
         margin-bottom: 25px;
     }
 
+      /* Increase the gaps between navigation links */
     nav ul {
         gap: 12px 28px;
     }
 
+    /* Add more space around the main content */
     main {
         margin: 32px auto;
         padding: 0 20px;
     }
 
+     /* Increase the padding inside each section */
     section {
         padding: 30px;
     }
 
+    /* Increase the section heading size */
     section h2 {
         font-size: 28px;
     }
 
+    /* Add more padding to the interests list */
     #about ul {
         padding: 20px 20px 20px 40px;
     }
 
+     /* Display project cards in two columns */
     #projects {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 /* Breakpoint 2: tablets and small laptops */
+
 @media (min-width: 900px) {
+   
+      /* Increase the header spacing */
     header {
         padding: 40px 20px;
     }
 
+      /* Make the main title larger on wider screens */
     header h1 {
         font-size: 42px;
     }
 
+    /* Increase the maximum width of the main content */
     main {
         max-width: 1000px;
         margin: 40px auto;
     }
 
+    /* Add more internal and bottom spacing to sections */
     section {
         padding: 35px;
         margin-bottom: 30px;
     }
 
+    /* Increase the section heading size */
     section h2 {
         font-size: 30px;
     }
 
+    /* Display project cards in three columns */
     #projects {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
 /* Breakpoint 3: large desktop screens */
+
 @media (min-width: 1200px) {
+    
+    /* Add extra space around the header content */
     header {
         padding: 48px 24px;
     }
 
+    /* Allow the navigation area to become wider */
     nav {
         max-width: 800px;
     }
 
+     /* Increase the maximum width of the main content */
     main {
         max-width: 1100px;
     }
 
+     /* Add more space between project cards */
     #projects {
         gap: 28px;
     }
 
+    /* Increase the padding inside project cards */
     #projects article {
         padding: 24px;
     }
