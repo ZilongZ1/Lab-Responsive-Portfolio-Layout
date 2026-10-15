@@ -61,7 +61,6 @@ nav li {
     margin: 0 12px;
 }
 
-/* Improve navigation link interactions */
 nav a {
     color: var(--main-green);
     text-decoration: none;
@@ -126,7 +125,7 @@ section p {
 
 #about ul {
     background-color: var(--light-green);
-    padding: 16px 16px 16px 36px;
+    padding: 16px 16px 16px 16px 36px;
     border-radius: 12px;
 }
 
