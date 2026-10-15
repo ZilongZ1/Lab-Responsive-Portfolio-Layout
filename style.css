@@ -22,12 +22,12 @@ header {
     background-color: var(--main-green);
     color: var(--white);
     text-align: center;
-    padding: 40px 20px;
+    padding: 28px 16px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: 1px;
 }
 
