@@ -12,3 +12,6 @@ projects > h2: grid-column: 1 / -1 (heading spans all columns)
 projects article: left border, light green background, rounded comers
 Inside the media queries: 2 columns at min-width 600px,
 3 columns at min-width 900px, larger gap at min-width 1200px
+9. Change the error
+10. Delete some comment
+11. Added comments for all
