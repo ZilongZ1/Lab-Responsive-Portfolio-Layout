@@ -76,16 +76,6 @@ nav {
     margin: 0 auto;
 }
 
-/* Navigation Bar */
-
-nav {
-    background-color: var(--white);
-    padding: 12px;
-    border-radius: 12px;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 nav ul {
     display: flex;
     flex-wrap: wrap;
