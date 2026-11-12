@@ -105,23 +105,30 @@ body.dark-mode nav a:hover {
 
 /* ---------- Dark / Light Mode Button ---------- */
 
+/* Theme Button Area */
+
+.theme-control {
+    text-align: center;
+    margin: 16px auto;
+}
+
+/* Dark / Light Mode Button */
+
 #theme-toggle {
     background-color: var(--main-green);
     color: #FFFFFF;
     border: 2px solid var(--accent-green);
     border-radius: 8px;
-    padding: 8px 12px;
+    padding: 9px 18px;
     font-family: inherit;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 #theme-toggle:hover {
-    background-color: var(--accent-green);
-    color: #FFFFFF;
-}
+    background-color: var(--accent-green);}
 
 #theme-toggle:focus-visible {
     outline: 3px solid var(--accent-green);
