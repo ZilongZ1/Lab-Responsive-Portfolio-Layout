@@ -364,5 +364,26 @@ footer p {
     /* Increase the padding inside project cards */
     #projects article {
         padding: 24px;
+
+        /* Dark Mode */
+
+body.dark-mode {
+    --light-green: #17231E;
+    --white: #26372F;
+    --text-color: #E8EEE9;
+    --accent-green: #8FC5A8;
+}
+
+/* Theme button */
+
+#theme-toggle {
+    background-color: #18453B;
+    color: #FFFFFF;
+    border: 2px solid #5B9279;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: inherit;
+}
     }
 }
