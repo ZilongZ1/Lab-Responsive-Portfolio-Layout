@@ -20,18 +20,36 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     
-}
+/* Dark Mode Text Improvements */
+
 body.dark-mode {
-    --light-green: #17231E;
-    --white: #26372F;
-    --text-color: #E8EEE9;
-    --accent-green: #8FC5A8;
+    color: #E8EEE9;
 }
 
-body.dark-mode nav a,
-body.dark-mode section h2,
-body.dark-mode section h3 {
-    color: var(--accent-green);
+/* Main headings and personal information */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode address,
+body.dark-mode strong {
+    color: #E8EEE9;
+}
+
+/* Links */
+body.dark-mode a {
+    color: #8FC5A8;
+}
+
+/* Navigation links */
+body.dark-mode nav a {
+    color: #FFFFFF;
+}
+
+/* Contact information */
+body.dark-mode #contact a {
+    color: #8FC5A8;
 }
 /* Style the main header with a dark green background */
 header {
